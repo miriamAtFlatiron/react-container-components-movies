@@ -87,3 +87,14 @@ documentation](http://developer.nytimes.com/movie_reviews_v2.json#/Documentation
 - [_New York Times_ Movie Reviews API Documentation](http://developer.nytimes.com/movie_reviews_v2.json#/Documentation)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/react-container-components-lab'>Container Components Lab</a> on Learn.co and start learning to code for free.</p>
+
+
+<!-- import { render } from 'enzyme' -->
+
+<!-- <MovieReview 
+            keyIndex = {reviews.link.url}
+            byline = {reviews.byline}
+            headline = {reviews.headline}
+            link = {reviews.link.url}
+            summary = {reviews.summary_short}
+            name = {reviews.display_title}/> -->

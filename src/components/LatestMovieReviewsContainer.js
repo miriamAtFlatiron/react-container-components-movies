@@ -18,7 +18,9 @@ class LatestMovieReviewsContainer extends Component {
     componentWillMount() {
         fetch(URL)
             .then(res => res.json())
-            .then(response => this.setState({
+            // .then(data => console.log(data))
+            .then(response => 
+                this.setState({
                 reviews: response.results.map(
                     review => ({
                         name: review.display_title,
@@ -30,7 +32,6 @@ class LatestMovieReviewsContainer extends Component {
                 )
             }));
     }
-    // .then(data => console.log(data))
 
     render() {
         return (
