@@ -23,8 +23,8 @@ class SearchableMovieReviewsContainer extends Component {
 
         fetch(URL + this.state.searchTerm)
         .then(res => res.json())
+        .then(response => this.setState({ reviews: response.results }))
         // .then(data => console.log(data))
-        .then(data => this.setState({ reviews: data.results }))
     }
 
     render() {

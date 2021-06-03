@@ -6,7 +6,7 @@ const MovieReviews = ({ reviews }) =>
 <div className = "review-list">
     {reviews.map(review => 
         <MovieReview 
-            key = {review.index}
+            key = {review.link.url}
             byline = {review.byline}
             headline = {review.headline}
             link = {review.link.url}
