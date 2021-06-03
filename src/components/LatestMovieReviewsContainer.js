@@ -18,7 +18,7 @@ class LatestMovieReviewsContainer extends Component {
     componentWillMount() {
         fetch(URL)
             .then(res => res.json())
-            .then(response => this.setState({ 
+            .then(response => this.setState({
                 reviews: response.results.map(
                     review => ({
                         name: review.display_title,
@@ -29,13 +29,13 @@ class LatestMovieReviewsContainer extends Component {
                     })
                 )
             }));
-            // .then(data => console.log(data))
     }
+    // .then(data => console.log(data))
 
     render() {
         return (
             <div className="latest-movie-reviews">
-                <MovieReviews reviews = {this.state.reviews} />
+                <MovieReviews reviews={this.state.reviews} />
             </div>
         )
     }
