@@ -1,5 +1,6 @@
 import React from 'react'
 
+//use headline, or any other unique attribute, as key
 const MovieReview = ({name, byline, headline, link, summary}) => {
   return (
     <div key={headline} className="review"> 
@@ -10,7 +11,7 @@ const MovieReview = ({name, byline, headline, link, summary}) => {
              <br/>
            <div className="author"> {byline} </div>
           </header>
-          <blockquote> {summary} </blockquote>
+          <p> {summary} </p>
       </div>
       )
 }
