@@ -1,31 +1,24 @@
-// Code MovieReviews Here
 import React from 'react'
-// import MovieReview from './MovieReview'
+import MovieReview from './MovieReview'
 
-const MovieReviews = ({ reviews }) => {
 
-    (console.log(reviews)) 
+
+const MovieReviews = ({reviews}) => {
+  
+    console.log("Reviews", reviews)
+  
     return (
-
-
-        <div  className="review">
-            {reviews.map(review => {
-                
-                    // keyIndex={review.link.url}
-                    {review.byline}
-                    // headline={review.headline}
-                    // link={review.link.url}
-                    // summary={review.summary_short}
-                    // name={review.display_title}
-            }
-            )}
-        </div>
-
-
-
-
+      <div className="review-list">
+      {reviews.map(MovieReview)}
+    </div>
     )
-}
+  }
+
+
+  MovieReviews.defaultProps = {
+      reviews: []
+    };
+
 
 export default MovieReviews
 

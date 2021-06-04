@@ -1,13 +1,18 @@
 import React from 'react'
 
-const MovieReview = (props) => {
-    // keyIndex, name, byline, headline, link, summary
-    console.log(props)
-    return (
-        <div key={this.props.keyIndex} className="review">
-        
-        </div>
-    )
+const MovieReview = ({name, byline, headline, link, summary}) => {
+  return (
+    <div key={headline} className="review"> 
+        <header>
+          <a className="review-link" href= {link.url}>
+           {headline}
+           </a>
+             <br/>
+           <div className="author"> {byline} </div>
+          </header>
+          <blockquote> {summary} </blockquote>
+      </div>
+      )
 }
 
 export default MovieReview

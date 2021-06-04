@@ -6,7 +6,7 @@ const NYT_API_KEY = 'puYTTlSpsHu4HmA4bx9i29WG6nMvbrxg';
 const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/search.json?'
     + `api-key=${NYT_API_KEY}&query=`;
 
-// Code SearchableMovieReviewsContainer Here
+
 class SearchableMovieReviewsContainer extends Component {
 
     state = {
